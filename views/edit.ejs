@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+       background-color: bisque;
+   background-size:cover;
+   height: 100vh;
+   }
+   </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Edit movie</h2>
+        <form method="post" action="/movie/<%=onemovie._id%>?_method=PUT">
+            <label>title<br><input type="text" name="title" value="<%=onemovie.title%>"/></label><br>
+            <label>releaseDate<br><input type="text" name="releaseDate" value="<%=onemovie.releaseDate%>"/></label><br>
+            <label> director<br><input type="text" name="director" value="<%=onemovie.director%>"/></label><br>
+            <label>type<br><input type="text" name="type"  value="<%=onemovie.type%>" /></label><br>
+            <label>rating<br><input type="number" name="rating" value="<%=onemovie.rating%>"/></label><br>
+            <div>
+                <input class="submits"type="submit"  value="Edit"/>
+                <a href="/movie"><button>Home Page</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -2,6 +2,7 @@
 require('dotenv').config(); // bring in our .env vars
 const express = require('express'); // web framework for node
 const morgan = require('morgan'); // logger for node
+const movieRoutes = require("./controllers/movierouters.js")
 const methodOverride = require('method-override'); // allows us to use PUT and DELETE methods
 
 // express application
@@ -9,8 +10,11 @@ const app = express();
 
 // middleware
 app.use(morgan('tiny')); // logging
+app.use(express.urlencoded());
 app.use(methodOverride('_method')); // override with POST having ?_method=DELETE or ?_method=PUT
 app.use(express.static('public')); // serve static files from public folder
+app.use("/movie", movieRoutes);
+
 
 // Routes
 
