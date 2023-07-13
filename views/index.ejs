@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
         body{
-       background-color: bisque;
+       /* background-color: bisque; */
    background-size:cover;
    height: 100vh;
    }
-   </style>
+   </style> -->
+   <%- include("./partials/files.ejs") %>
 </head>
-<body>
-    <div>
-        <ul><h1> list of movies</h1>
-         <% totalmovies.forEach((movie, index)=>{%>
-          <a href="/movie/<%= movie._id%>"><li> <%= movie.title%></li></a>
+<body class="indexbody"> 
+    <h1 style="text-align: center; color: aliceblue;"> list of movies</h1>
+    <a href="/movie/new"><button class="btn btn-outline-primary">add movie</button></a>
+    <div class="mainimg" >
+         <%totalmovies.forEach((movie, index)=>{%>
+          <a href="/movie/<%= movie._id%>">
+            <img class="indexImg" src="<%=movie.image%>" alt="img"> 
+            <h2 style="text-align: center;"><%= movie.title%></h2> 
+        </a>
             <% })%>
-        </ul>
-        <a href="/movie/new"><button>add movie</button></a>
     </div>
+
 </body>
 </html>
 

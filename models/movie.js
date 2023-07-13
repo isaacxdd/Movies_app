@@ -3,8 +3,8 @@ const mongoose = require('./connection');
 const movieSchema = new mongoose.Schema({
 
     title:String,
-    releasteDate:String,
-    Director:String,
+    releaseDate:String,
+    director:String,
     type:String,
     rating:Number,
     image:String

@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
          body{
         background-color: bisque;
     background-size:cover;
     height: 100vh;
     }
-    </style>
+    </style> -->
+    <%- include("./partials/files.ejs") %>
 </head>
 
 <body>
-    <h1 >Create a New movie</h1>
-    <div>
+    <a href="/movie"><button class="btn btn-outline-primary">Home Page</button></a>
+    <h1 style="text-align: center; color: aliceblue;">Create a New movie</h1>
+    <div style="display: flex; justify-content: center;">
         <form method="post" action="/movie" >
             <label>title<br><input type="text" name="title" /></label><br>
             <label>releaseDate<br><input type="text" name="releaseDate" /></label><br>
             <label> director<br><input type="text" name="director" /></label><br>
             <label>type<br><input type="text" name="type" /></label><br>
             <label>rating<br><input type="number" name="rating" /></label><br>
+            <label>image<br><input type="text" name="image" /></label><br>
             <div>
-                <input class= "submits" type="submit"  value="Add movie"/>
-                <a href="/movie"><button>Home Page</button></a>
+                <input class= "btn btn-outline-primary" type="submit"  value="Add movie"/>  
             </div>
         </form>
     </div>

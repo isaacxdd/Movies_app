@@ -5,7 +5,7 @@ module.exports= [
       director: "Bong Joon-ho",
       type: "Drama, Thriller",
       rating: 8.6,
-      image: "https://example.com/parasite.jpg"
+      image: "https://m.media-amazon.com/images/I/91sustfojBL._AC_UF894,1000_QL80_.jpg"
     },
     {
       title: "1917",
@@ -13,7 +13,7 @@ module.exports= [
       director: "Sam Mendes",
       type: "War, Drama",
       rating: 8.3,
-      image: "https://example.com/1917.jpg"
+      image: "https://i.ebayimg.com/images/g/B~EAAOSw6Wld9iAJ/s-l1600.jpg"
     },
     {
       title: "Joker",
@@ -21,7 +21,7 @@ module.exports= [
       director: "Todd Phillips",
       type: "Crime, Drama, Thriller",
       rating: 8.4,
-      image: "https://example.com/joker.jpg"
+      image: "https://m.media-amazon.com/images/I/51a+Ihr3TJL.jpg"
     },
     {
       title: "Knives Out",
@@ -29,7 +29,7 @@ module.exports= [
       director: "Rian Johnson",
       type: "Comedy, Mystery, Drama",
       rating: 7.9,
-      image: "https://example.com/knivesout.jpg"
+      image: "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
     },
     {
       title: "The Gentlemen",
@@ -37,7 +37,7 @@ module.exports= [
       director: "Guy Ritchie",
       type: "Action, Comedy, Crime",
       rating: 7.8,
-      image: "https://example.com/thegentlemen.jpg"
+      image: "https://collider.com/wp-content/uploads/2019/11/the-gentlemen-poster-matthew-mcconaughey.jpg"
     },
     {
       title: "The Invisible Man",
@@ -45,7 +45,7 @@ module.exports= [
       director: "Leigh Whannell",
       type: "Horror, Mystery, Sci-Fi",
       rating: 7.1,
-      image: "https://example.com/theinvisibleman.jpg"
+      image: "https://i.ebayimg.com/images/g/y8QAAOSwGQVicVBE/s-l1200.webp"
     }
   ];
 

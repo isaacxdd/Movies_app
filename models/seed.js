@@ -9,7 +9,7 @@ mongoose.connection.on("open", async()=>{
         return{
             title: v.title,
             releaseDate: v.releaseDate,
-            Director: v.Director,
+            director: v.director,
             type: v.type,
             rating: v.rating,
             image: v.image

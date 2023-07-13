@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
         body{
        background-color: bisque;
    background-size:cover;
    height: 100vh;
-   }
-   </style> 
+   } -->
+   <!-- </style>  -->
+   <%- include("./partials/files.ejs") %>
 </head>
 <body>
     <div>
-        <div class="links">
-            <a href="/movie/<%= onemovie._id%>/edit"><button>Edit</button></a>
+        <div style="display: flex;">
+            <a href="/movie"><button class="btn btn-outline-primary">Home Page</button></a>
+            <a href="/movie/<%= onemovie._id%>/edit"><button class="btn btn-outline-primary">Edit</button></a>
             <form action="/movie/<%= onemovie._id %>?_method=DELETE" method="POST">
-            <input type="submit" value="DELETE"/>
+            <input class="btn btn-outline-primary" type="submit" value="DELETE"/>
             </form>
-            <a href="/movie"><button>Home Page</button></a>
+           
         </div>
-        <h2> <%=onemovie.title %></h2>
-        <ul>
-            <li>releaseDate: <%=onemovie.releaseDate%></li>
-            <li>director: <%=onemovie.director%></li>
-            <li>type: <%=onemovie.type %></li>
-            <li>rating: <%=onemovie.rating %></li>
-        </ul>  
+        <h2 style="color: aliceblue; text-align: center;"> <%=onemovie.title %></h2>
+        <img style=" display: flex; margin: 0 auto; height: 600px; " src="<%=onemovie.image %>" alt="image"> 
+       
+       <div style="display: flex; margin-left: 230px; color: aliceblue; ">  
+             <div> 
+                <h4>releaseDate: <%=onemovie.releaseDate%></h4>
+                <h4>director: <%=onemovie.director%></h4>
+                <h4>type: <%=onemovie.type %></h4>
+                <h4>rating: <%=onemovie.rating %></h4>
+            </div>
+        </div>
     </div>
 </body>
 </html>
