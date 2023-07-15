@@ -16,9 +16,6 @@ body{
     height: 28rem;
     
 }
-
-
-
 @media (max-width: 767px) {
     .mainimg{ justify-content: center;
         overflow-y: scroll;

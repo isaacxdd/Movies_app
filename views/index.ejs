@@ -13,9 +13,9 @@
    </style> -->
    <%- include("./partials/files.ejs") %>
 </head>
+<a href="/movie/new"><button class="btn btn-outline-primary">add movie</button></a>
 <body class="indexbody"> 
-    <h1 style="text-align: center; color: aliceblue;"> list of movies</h1>
-    <a href="/movie/new"><button class="btn btn-outline-primary">add movie</button></a>
+    <h1 style="text-align: center; color: aliceblue;"> Most popular movies</h1>
     <div class="mainimg" >
          <%totalmovies.forEach((movie, index)=>{%>
           <a href="/movie/<%= movie._id%>">
